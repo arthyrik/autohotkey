@@ -19,3 +19,6 @@ Capslock & i::Up
 Capslock & k::Down
 Capslock & j::Left
 Capslock & l::Right
+
+; Right Alt to Del
+RAlt::Del
