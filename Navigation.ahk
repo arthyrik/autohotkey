@@ -2,11 +2,9 @@ SetCapsLockState, AlwaysOff
 
 ; Scroll up
 Capslock & e::Send,{WheelUp}
-Capslock & e UP::MouseClick
 
 ; Scroll down
 Capslock & d::Send,{WheelDown}
-Capslock & d UP::MouseClick
 
 ; Home
 Capslock & h::Home
@@ -22,3 +20,6 @@ Capslock & l::Right
 
 ; Right Alt to Del
 RAlt::Del
+
+; Win + Space to switch language
+#Space::PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
