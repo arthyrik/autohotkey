@@ -7,10 +7,10 @@ Capslock & e::Send,{WheelUp}
 Capslock & d::Send,{WheelDown}
 
 ; Home
-Capslock & h::Home
+Capslock & u::Home
 
 ; End
-Capslock & `;::End
+Capslock & o::End
 
 ; Arrows
 Capslock & i::Up
