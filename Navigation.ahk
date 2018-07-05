@@ -1,4 +1,5 @@
 SetCapsLockState, AlwaysOff
+SetScrollLockState, AlwaysOff
 
 ; Scroll up
 Capslock & e::Send,{WheelUp}
@@ -23,3 +24,6 @@ RAlt::Del
 
 ; Win + Space to switch language
 #Space::PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
+
+; ScrLk to lock computer
+Scrolllock::Run, % "rundll32.exe user32.dll,LockWorkStation"
