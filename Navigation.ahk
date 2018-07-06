@@ -1,23 +1,19 @@
 SetCapsLockState, AlwaysOff
 SetScrollLockState, AlwaysOff
 
-; Scroll up
-Capslock & e::Send,{WheelUp}
+; Scroll up/down (capslock + ed)
+Capslock & sc012::Send,{WheelUp}
+Capslock & sc020::Send,{WheelDown}
 
-; Scroll down
-Capslock & d::Send,{WheelDown}
+; Home/End (capslock + uo)
+Capslock & sc016::Home
+Capslock & sc018::End
 
-; Home
-Capslock & u::Home
-
-; End
-Capslock & o::End
-
-; Arrows
-Capslock & i::Up
-Capslock & k::Down
-Capslock & j::Left
-Capslock & l::Right
+; Arrows (capslock + ijkl)
+Capslock & sc017::Up
+Capslock & sc025::Down
+Capslock & sc024::Left
+Capslock & sc026::Right
 
 ; Right Alt to Del
 RAlt::Del
