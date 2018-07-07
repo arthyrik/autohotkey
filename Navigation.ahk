@@ -18,8 +18,8 @@ Capslock & sc026::Right
 ; Right Alt to Del
 RAlt::Del
 
-; Win + Space to switch language
-#Space::PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
+; Capslock to switch language
+Capslock::PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 
 ; ScrLk to lock computer
 Scrolllock::Run, % "rundll32.exe user32.dll,LockWorkStation"
