@@ -1,14 +1,14 @@
-;Ctrl & Numpad 4: Previous Track
-^Numpad4::Media_Prev
+;Previous Track
+Left::Media_Prev
 
-;Ctrl & Numpad 6: Next Track
-^Numpad6::Media_Next
+;Next Track
+Right::Media_Next
 
-;Ctrl & Numpad 8: Volume Up
-^Numpad8::SoundSet +3
+;Volume Up
+Up::SoundSet +3
 
-;Ctrl & Numpad 2: Volume Down
-^Numpad2::SoundSet -3
+;Volume Down
+Down::SoundSet -3
 
-;Ctrl & Numpad 5: Play/Pause Track
-^Numpad5::Media_Play_Pause
+;Play/Pause Track
+Down & Up::Media_Play_Pause
