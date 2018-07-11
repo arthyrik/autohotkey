@@ -9,25 +9,29 @@ dual := new Dual
 
 #Include <dual/defaults>
 
+#If true ; Override defaults.ahk. There will be "duplicate hotkey" errors otherwise.
+*Space::
+*Space UP::dual.combine("F22", A_ThisHotkey, {delay: 70, timeout: 300, doublePress: -1})
+
+;b
+*sc030::dual.comboKey({F22: "Space"})
+
+;ijkl
 *sc017::dual.comboKey({F22: "Up"})
 *sc024::dual.comboKey({F22: "Left"})
 *sc025::dual.comboKey({F22: "Down"})
 *sc026::dual.comboKey({F22: "Right"})
 
+;uop;
 *sc016::dual.comboKey({F22: "Home"})
 *sc018::dual.comboKey({F22: "End"})
 *sc019::dual.comboKey({F22: "PgUp"})
 *sc027::dual.comboKey({F22: "PgDn"})
 
+;nm<
 *sc031::dual.comboKey({F22: "BackSpace"})
 *sc032::dual.comboKey({F22: "Enter"})
 *sc033::dual.comboKey({F22: "Del"})
-
-#If true ; Override defaults.ahk. There will be "duplicate hotkey" errors otherwise.
-*Space::
-*Space UP::dual.combine("F22", A_ThisHotkey, {delay: 70, timeout: 300, doublePress: -1})
-
-*b::dual.comboKey({F22: "Space"})
 
 ;Previous Track
 Left::Media_Prev
