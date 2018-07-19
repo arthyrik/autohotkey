@@ -2,7 +2,7 @@
 SetCapsLockState, AlwaysOff
 SetScrollLockState, AlwaysOff
 
-;Click ScrollLock every 3 minutes
+; Click ScrollLock every 3 minutes to prevent vdi being locked
 Loop
 {
   Send, {ScrollLock}
