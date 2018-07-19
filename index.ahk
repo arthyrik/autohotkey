@@ -1,2 +1,2 @@
-#include Navigation.ahk
-#include MediaPlayer.ahk
+#include navigation.ahk
+#include mediaPlayer.ahk
